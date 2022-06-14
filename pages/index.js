@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Head from "next/head";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers, STATUSES } from "../redux/features/usersSlice";
 import { LoadingSpinner } from "../components/LoadingSpinner";
@@ -24,6 +25,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Convin Frontend Task</title>
+      </Head>
       <Box
         height="100vh"
         width="100vw"
