@@ -44,7 +44,7 @@ export default function UserCard({ email, first_name, last_name, avatar }) {
           color={"white"}
           rounded={"md"}
           variant="outline"
-          border="4px solid #120E43"
+          border="2px solid #120E43"
           _hover={{
             transform: "translateY(-2px)",
             boxShadow: "lg",

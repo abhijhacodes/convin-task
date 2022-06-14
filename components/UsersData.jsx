@@ -59,10 +59,14 @@ export const UsersData = ({ users }) => {
         <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent bgGradient="linear(to-b, #120E43, #03203C)">
-            <ModalHeader alignSelf="center" color="white">
+            <ModalHeader
+              alignSelf="center"
+              color="white"
+              borderBottom="2px solid #120E43"
+            >
               User Information
             </ModalHeader>
-            <ModalCloseButton />
+            <ModalCloseButton colorScheme="white" variant="filled" />
             <ModalBody>
               <UserCard
                 email={user.email}
