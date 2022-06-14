@@ -12,11 +12,12 @@ export const LoadingSpinner = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
+        bgGradient="linear(to-b, #2827CC, #0D0D0D)"
       >
         <Spinner
           thickness="4px"
           speed="0.65s"
-          color="blue.500"
+          color="blue.200"
           size="xl"
           colorScheme="facebook"
         />

@@ -25,7 +25,12 @@ export default function UserCard({ email, first_name, last_name, avatar }) {
 
       <Box p={6}>
         <Stack spacing={0} align={"center"} mb={5}>
-          <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
+          <Heading
+            fontSize={"2xl"}
+            fontWeight={500}
+            fontFamily={"body"}
+            color="white"
+          >
             {first_name + " " + last_name}
           </Heading>
           <Text color={"green.200"}>{email}</Text>

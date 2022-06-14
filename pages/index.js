@@ -64,7 +64,12 @@ export default function Home() {
               </Text>
             </Heading>
             {users ? <UsersData users={users} /> : <LoadingSpinner />}
-            <Text position="absolute" bottom="5" alignSelf="center">
+            <Text
+              position="absolute"
+              bottom="5"
+              alignSelf="center"
+              color="white"
+            >
               Built by{" "}
               <Link
                 href="https://abhijha.live/"
