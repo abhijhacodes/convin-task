@@ -42,6 +42,7 @@ export const UsersData = ({ users }) => {
           {users.map((user) => (
             <WrapItem key={user.id}>
               <Button
+                fontWeight="bold"
                 colorScheme="green"
                 key={user.id}
                 size="lg"
