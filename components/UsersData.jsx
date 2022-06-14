@@ -47,6 +47,7 @@ export const UsersData = ({ users }) => {
                 size="lg"
                 _hover={{ bg: "green.600", color: "white" }}
                 variant="outline"
+                border="2px"
                 onClick={() => showUserInfo(user.id)}
               >
                 {user.id}
@@ -57,7 +58,9 @@ export const UsersData = ({ users }) => {
         <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
           <ModalOverlay />
           <ModalContent bgGradient="linear(to-b, #120E43, #03203C)">
-            <ModalHeader alignSelf="center">User Information</ModalHeader>
+            <ModalHeader alignSelf="center" color="white">
+              User Information
+            </ModalHeader>
             <ModalCloseButton />
             <ModalBody>
               <UserCard
