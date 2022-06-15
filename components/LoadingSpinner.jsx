@@ -5,7 +5,7 @@ export const LoadingSpinner = () => {
     <Center height="100vh">
       <Box
         px={4}
-        h="90vh"
+        h="100vh"
         w="100vw"
         py={6}
         borderRadius="lg"
@@ -15,9 +15,10 @@ export const LoadingSpinner = () => {
         bgGradient="linear(to-b, #2827CC, #0D0D0D)"
       >
         <Spinner
-          thickness="4px"
+          thickness="8px"
           speed="0.65s"
-          color="blue.200"
+          color="green.200"
+          emptyColor="red.200"
           size="xl"
           colorScheme="facebook"
         />
